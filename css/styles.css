@@ -1,0 +1,50 @@
+* {
+    font-family: Helvetica;
+    background-color: rgb(222, 0, 230);
+    /* overflow: hidden; */
+}
+
+.header{
+    width:100vw;
+    height: 200px;
+    border: 10px solid yellow;
+}
+.two-up {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100vw;
+    overflow-x: hidden;
+
+}
+.column::-webkit-scrollbar {
+    display: none;
+  }
+  
+.column {
+    font-family: Arial, Helvetica, sans-serif;
+    /* width: 500px;
+    height: 500px; */
+    display: flex;
+    flex-direction: column;
+    flex-basis: 100%;
+    flex: 1;
+    height: 100vh;
+    -ms-overflow-style: none; 
+    scrollbar-width: none;  
+    
+}
+
+.left {
+    border: 10px solid blue;
+    background-color: rgb(193, 222, 114);
+    width: 50vw;
+    height: 100vh;
+}
+
+.right {
+    border: 10px solid red;
+    background-color: aliceblue;
+    width: 50vw;
+    height: 100vh;
+}

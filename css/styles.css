@@ -56,7 +56,9 @@ h2 {
     flex-direction: row;
     flex-wrap: wrap;
     width: 100vw;
-    overflow-x: hidden;
+    height: 1200px;
+    background-color: blue;
+    /* overflow-x: hidden; */
 
 }
 .column::-webkit-scrollbar {
@@ -71,17 +73,17 @@ h2 {
     flex-direction: column;
     flex-basis: 100%;
     flex: 1;
-    height: 100vh;
+    /* height: 100vh; */
     /* -ms-overflow-style: none; 
     scrollbar-width: none;   */
     
 }
 
 .left {
-    border: 10px solid blue;
+    border: 10px solid rgb(218, 161, 206);
     background-color: rgb(193, 222, 114);
     width: 50vw;
-    height: 100vh;
+    /* height: 100vh; */
     display: flex;
     align-items: center;
     justify-content: right;
@@ -93,7 +95,7 @@ h2 {
     border: 10px solid red;
     background-color: aliceblue;
     width: 50vw;
-    height: 100vh;
+    /* height: 100vh; */
     display: flex;
     align-items: left;
     justify-content: center;
@@ -110,6 +112,9 @@ h2 {
 
 .box{
     border: 5px solid rgb(255, 157, 0);
+    width: 400px;
+    height: 800px; 
+    
 }
 
 .grid {
@@ -124,7 +129,15 @@ h2 {
 
 .square {
     border: 1px solid yellow;
-    background: aqua;
+    /* width: 40px;
+    height: 40px; */
+    /* background: aqua; */
+    background:rgb(255, 0, 0);
+}
+
+.square img {
+    width: 100%;
+    height: 100%;
 }
 
 .canvas {

@@ -15,20 +15,18 @@
             <!-- <button onclick="changeColor()"></button> -->
             <div class="grid">
               <!-- row 1 -->
-              <div class="square a">
-                <img onclick="changeImage()" src="img/black.png" alt="black" id="mainImage">
+           
+              <div class="square a"></div>
+              <div class="square a"></div>
+              <div class="square a"></div>
+              <div class="square a"></div>
+              <div class="square a"></div>
+              <div class="square a"></div>
+              <div class="square a"></div>
+              <div class="square a"></div>
+              <div onclick="changeImage()" class="square a">
+                <img src="img/black.png" alt="black" id="mainImage">
               </div>
-              <div class="square a">
-                <img onclick="changeImage()" src="img/black.png" alt="black" id="mainImage">
-              </div>
-              <div class="square a"></div>
-              <div class="square a"></div>
-              <div class="divItem square a"></div>
-              <div class="square a"></div>
-              <div class="square a"></div>
-              <div class="square a"></div>
-              <div class="square a"></div>
-              <div class="square a"></div>
               <!-- row 2 -->
               <div class="square a"></div>
               <div class="square a"></div>
@@ -244,6 +242,20 @@
         <div class="column right">
           <!-- <div class="canvas box"></div> -->
           <canvas class="box" id="drawing-board"></canvas>
+
+          <section class="container">
+            <div id="toolbar">
+                <h1>Draw.</h1>
+                <label for="stroke">Stroke</label>
+                <input id="stroke" name='stroke' type="color">
+                <label for="lineWidth">Line Width</label>
+                <input id="lineWidth" name='lineWidth' type="number" value="5">
+                <button id="clear">Clear</button>
+            </div>
+            <div class="drawing-board">
+                <canvas id="drawing-board"></canvas>
+            </div>
+        </section>
         </div>
       </div>
 

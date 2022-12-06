@@ -143,7 +143,7 @@ h2 {
 .canvas {
     width: 400px;
     height: 800px;
-    background: black;
+    background: rgb(209, 182, 182);
 }
 
 .exhibition {

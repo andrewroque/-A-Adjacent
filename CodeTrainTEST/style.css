@@ -1,0 +1,42 @@
+/* * {
+    background-color: blue;
+} */
+
+.asdf {
+    background-color:red;
+    width: 100vw; 
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+#canvasDiv {
+    padding: 4000 px;
+}
+
+#sketch-container {
+    width: 800px; 
+    height: 1000px;
+    display: flex;
+  
+    background-color: brown;
+}
+
+#toolbar {
+    width: 100vw; 
+    height: 100vh;
+    background-color: blue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+#save-button {
+    width: 100px; 
+    height: 100px;
+    background-color: pink;
+
+}

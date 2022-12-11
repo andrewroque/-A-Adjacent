@@ -1,0 +1,53 @@
+/* * {
+    background-color: blue;
+} */
+
+.asdfasdf {
+    background-color:red;
+    width: 100vw; 
+    height: 1000px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+#sketch-container {
+    width: 1000px; 
+    height: 600px;
+    position: relative;
+    display: flex;
+    /* height: 2000px; */
+    background-color: brown;
+    justify-content: center;
+    align-items: center;
+}
+
+#toolbar {
+    width: 100vw; 
+    height: 1000px;
+    background-color: blue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+#save-button {
+    width: 100px; 
+    height: 100px;
+    background-color: pink;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+
+}
+
+
+
+/* @media print {
+    #square {
+        height: 100%;
+    } 
+
+} */

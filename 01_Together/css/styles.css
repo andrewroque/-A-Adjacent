@@ -44,23 +44,45 @@ h2 {
 
 .header {
     width:100vw;
-    height: 1200px;
+    height: 600px;
     border: 10px solid yellow;
     /* font-size: xx-large; */
     display: flex;
     align-items: center;
     justify-content: center; 
 }
-.two-up {
+
+
+.buttonbar {
     display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.sketchdiv {
     width: 100vw;
     height: 1200px;
     background-color: blue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: wrap;
     /* overflow-x: hidden; */
 
 }
+
+#sketch-container {
+    width: 90%; 
+    height: 1000px;
+    position: relative;
+    display: flex;
+    /* height: 2000px; */
+    background-color: brown;
+    justify-content: center;
+    align-items: center;
+}
+
 .column::-webkit-scrollbar {
     display: none;
   }
@@ -77,6 +99,11 @@ h2 {
     /* -ms-overflow-style: none; 
     scrollbar-width: none;   */
     
+}
+
+#mycanvas {
+    width: 100%;
+    height: 100%;
 }
 
 .left {

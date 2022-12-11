@@ -10,16 +10,21 @@ let g;
 let b;
 let vScale = 20;
 let threshold;
+let container = document.getElementById("sketch-container");
+let w = container.clientWidth;
+let h = container.clientHeight;
+console.log(w,h);
 
 
 
 
 function setup() {
-    let canvas = createCanvas(800, 500);
+    let canvas = createCanvas(w, h);
     pixelDensity(1);
     background(255, 255, 255);
     canvas.parent('sketch-container');
     video = createCapture(VIDEO);
+    canvas.id('mycanvas');
     video.size(width/vScale, height/vScale);
     video.hide();
     saveButton = createButton("Asdf");

@@ -188,22 +188,25 @@ body {
 
 .gallery-container{
     width: 100vw;
-    background-color: blue;
+    /* background-color: blue; */
     display: flex;
     justify-content: center;
+    align-content: center;
 
 }
 
 #gallery {
-    width: 1200px;
-    background-color: brown;
+    width: 100%;
+    /* background-color: brown; */
     display: flex;
     flex-direction: row;
-    /* flex: wrap; */
+    flex-wrap: wrap;
     padding: 40px;
+    justify-content: center;
+    gap: 20px;
 }
 
-img {
-    width: 400px;
+#pic {
+    width: 450px;
     height: auto;
 }

@@ -27,8 +27,11 @@ function setup() {
     canvas.id('mycanvas');
     video.size(width/vScale, height/vScale);
     video.hide();
-    saveButton = createButton("Asdf");
+    // saveButton = createButton("Asdf");
+    saveButton = createImg('img/s.png');
     saveButton.mousePressed(saveSnap);
+    saveButton.id('savebutt');
+    saveButton.parent('buttonbar');
 }
 
 function saveSnap() {

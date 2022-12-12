@@ -35,7 +35,7 @@ function setup() {
 }
 
 function saveSnap() {
-    saveCanvas('adsdff', 'png');
+    saveCanvas('a-adjacent', 'png');
 }
 
 function draw() {
@@ -52,15 +52,15 @@ function draw() {
             
             var bright = (r+g+b)/2;
 
-            // var threshold = 120;
+            var threshold = 200;
 
-            // if (bright > threshold) {
-            //     fill(255);
-            // } else {
-            //     fill(0);
-            // }
-            
-            fill(bright);
+            if (bright > threshold) {
+                fill(255);
+            } else {
+                fill(0);
+            }
+            //comment out fill for treshold to work
+            // fill(bright);
             rectMode(CENTER);
             rect(x*vScale, y*vScale, vScale, vScale);
 

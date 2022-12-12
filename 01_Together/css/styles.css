@@ -17,15 +17,16 @@
 }
  
 * {
-    font-family: "SuisseIntl", "Times New Roman", serif;
-    background-color: rgb(222, 0, 230);
+    font-family: "SuisseIntl", "Helvetica", serif;
+    /* background-color: rgb(222, 0, 230); */
     /* overflow: hidden; */
 }
 
 
 p {
-    font-family: "SuisseIntl", "Times New Roman", serif;
+    font-family: "SuisseIntl", "Helvetica", serif;
     font-weight: regular;
+    color: rgb(111, 143, 175);
 }
 
 h1 {
@@ -35,34 +36,51 @@ h1 {
 }
 
 h2 {
-    font-family: "SuisseIntl", "Times New Roman", serif;
+    font-family: "SuisseIntl", "Helvetica", serif;
     font-weight: bold;
     font-size: 100px;
-    color: rgb(254, 235, 93);
-    -webkit-text-stroke: 3px black;
+    color: rgb(0, 0, 0);
+    /* -webkit-text-stroke: 3px black; */
+}
+
+h3 {
+    font-family: "SuisseIntl", "Helvetica", serif;
+    font-weight: bold;
+    font-size: 120px;
+    color: rgb(0, 0, 0);
+    /* -webkit-text-stroke: 3px black;s */
+}
+
+body {
+    background-color: rgb(255, 255, 255);
 }
 
 .header {
     width:100vw;
     height: 600px;
-    border: 10px solid yellow;
-    /* font-size: xx-large; */
-    display: flex;
+    /* border: 10px solid yellow; */
+    display: none;
     align-items: center;
     justify-content: center; 
 }
 
+#print-header {
+    width:100vw;
+    height: 200px;
+    /* border: 10px solid yellow; */
+    display: none;
+    align-items: center;
+    justify-content: center; 
+}
 
 #buttonbar {
     display: flex;
-    justify-content: center;
-    align-items: center;
+    /* justify-content: center;
+    align-items: center; */
 }
 
 #button-container {
     width: 100px;
-    /* height: 100px; */
-    /* background-color: chartreuse; */
     justify-content: center;
     align-content: center;
     justify-content: space-between;
@@ -86,8 +104,8 @@ h2 {
 
 .sketchdiv {
     width: 100vw;
-    height: 1200px;
-    background-color: blue;
+    height: 1000px;
+    /* background-color: blue; */
     display: flex;
     justify-content: center;
     align-items: center;
@@ -98,91 +116,24 @@ h2 {
 }
 
 #sketch-container {
-    width: 90%; 
-    height: 1000px;
+    width: 100%; 
+    height: 100%;
     position: relative;
     display: flex;
     /* height: 2000px; */
-    background-color: brown;
+    /* background-color: brown; */
     justify-content: center;
     align-items: center;
 }
 
-.column::-webkit-scrollbar {
-    display: none;
-  }
-  
-.column {
-    /* font-family: Arial, Helvetica, sans-serif; */
-    /* width: 500px;
-    height: 500px; */
-    display: flex;
-    flex-direction: column;
-    flex-basis: 100%;
-    flex: 1;
-    /* height: 100vh; */
-    /* -ms-overflow-style: none; 
-    scrollbar-width: none;   */
-    
-}
-
-#mycanvas {
+/* #mycanvas {
     width: 100%;
     height: 100%;
-}
-
-.left {
-    border: 10px solid rgb(218, 161, 206);
-    background-color: rgb(193, 222, 114);
-    width: 50vw;
-    /* height: 100vh; */
-    display: flex;
-    align-items: center;
-    justify-content: right;
-    flex-direction: row-reverse;
-    /* margin-left: auto; */
-}
-
-.right {
-    border: 10px solid red;
-    background-color: aliceblue;
-    width: 50vw;
-    /* height: 100vh; */
-    display: flex;
-    align-items: left;
-    justify-content: center;
-}
-
-.grid-tool {
-    width: 400px;
-    height: 800px;
-    /* position: absolute;
-    right: 0; */
-    /* grid-template: repeat(10, 1fr) / repeat(20, 1fr); */
-    
-}
-
-.box{
-    border: 5px solid rgb(255, 157, 0);
-    width: 400px;
-    height: 800px; 
-    
-}
-
-
-
-.square {
-    border: 1px solid yellow;
-    /* width: 40px;
-    height: 40px; */
-    /* background: aqua; */
-    background:rgb(255, 0, 0);
-}
-
+} */
 
 .exhibition {
     /* height:1200px; */
-    background-color: cornflowerblue;
+    /* background-color: cornflowerblue; */
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -192,7 +143,7 @@ h2 {
 
 #exhibit-statement-title {
     margin-top: 6em;
-    background-color: rgb(26, 255, 0);
+    /* background-color: rgb(26, 255, 0); */
     /* align-items: center; */
     justify-content: center;
     display: flex;
@@ -206,7 +157,7 @@ h2 {
     margin-left: 50%;
     margin-right: 15%;
     margin-top: 3em;
-    background-color: rgb(255, 0, 0);
+    /* color: rgb(182, 208, 226); */
     line-height: 1.3em;
 }
 
@@ -214,21 +165,45 @@ h2 {
 .artist-text {
     margin-top: 3em;
 }
+
+
 .contributing-artists {
     height: 800px;
     display: flex;
     flex-wrap: wrap;
-    border: 5px dotted rosybrown;
+    /* border: 5px dotted rosybrown; */
     /* align-items: center; */
     justify-content: center;
     margin-top: 200px;
-    color: aliceblue;
-    background-color: rgb(255, 46, 172);
+    /* color: aliceblue; */
+    /* background-color: rgb(255, 46, 172); */
 }
 
 .names {
     column-count: 6;
     padding-left: 3px;
     line-height: 1.3em;
-    color: aliceblue;
+    /* color: rgb(182, 208, 226); */
+}
+
+.gallery-container{
+    width: 100vw;
+    background-color: blue;
+    display: flex;
+    justify-content: center;
+
+}
+
+#gallery {
+    width: 1200px;
+    background-color: brown;
+    display: flex;
+    flex-direction: row;
+    /* flex: wrap; */
+    padding: 40px;
+}
+
+img {
+    width: 400px;
+    height: auto;
 }

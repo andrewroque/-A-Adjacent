@@ -1,0 +1,27 @@
+
+
+@media print {
+    @page {
+        size: ledger landscape;
+    }
+}
+
+/* ////////////// */
+
+.header, #buttonbar, #button-container, .exhibition, #exhibit-tatement-title, #exhibit-statement, .artist-text, .contributing-artists, .names{
+    display: none;
+}
+
+#print-header {
+    display: block;
+}
+
+/* .print-wrapper {
+    display: block;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100vw;
+    height: 1200px;
+    background-color: blue;
+    display: none;
+} */

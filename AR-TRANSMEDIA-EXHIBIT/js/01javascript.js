@@ -52,7 +52,7 @@ function draw() {
             
             var bright = (r+g+b)/2;
 
-            var threshold = 125;
+            var threshold = 120;
 
             if (bright > threshold) {
                 fill(255);

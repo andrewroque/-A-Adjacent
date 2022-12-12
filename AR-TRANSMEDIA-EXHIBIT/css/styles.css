@@ -75,13 +75,13 @@ body {
 
 #buttonbar {
     display: flex;
-    /* justify-content: center;
-    align-items: center; */
+    justify-content: left;
+    align-items: center;
 }
 
 #button-container {
     width: 100px;
-    justify-content: center;
+    justify-content: left;
     align-content: center;
     justify-content: space-between;
     padding: auto;
@@ -89,6 +89,7 @@ body {
 
 #printbutt {
     padding: 10px;
+    
     border: none;
     outline: none;
     background: none;
